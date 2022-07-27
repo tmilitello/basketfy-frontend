@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import axios from "axios";
 
-// axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "basketfy-2022.herokuapp.com" : "/";
+// axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "https://ancient-thicket-68427.herokuapp.com/" : "/";
 
 axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "/";
 
