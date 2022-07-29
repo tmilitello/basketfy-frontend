@@ -3,7 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import axios from "axios";
 
-axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "localhost:3000" : "https://basketfy-2022.herokuapp";
+axios.defaults.baseURL =
+  process.env.NODE_ENV === "development" ? "http://localhost:3000/" : "https://basketfy-2022.herokuapp";
 
 var jwt = localStorage.getItem("jwt");
 if (jwt) {
