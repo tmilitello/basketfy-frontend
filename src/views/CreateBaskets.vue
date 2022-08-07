@@ -8,7 +8,7 @@ export default {
   },
   data: function () {
     return {
-      newBasketParams: { assets: [{ asset_id: "", weight: "", status: "active" }] },
+      newBasketParams: { assets: [{ asset_id: "", initial_weight: "", status: "active" }] },
       options: [],
       search: "",
     };
@@ -30,7 +30,7 @@ export default {
       });
     },
     addAsset: function () {
-      this.newBasketParams.assets.push({ name: "", weight: "" });
+      this.newBasketParams.assets.push({ name: "", initial_weight: "" });
     },
   },
 };
@@ -122,7 +122,7 @@ export default {
                     name="name"
                     class="rounded-lg bg-white opacity-9"
                     placeholder="Asset Weighting (%)"
-                    v-model="asset.weight"
+                    v-model="asset.initial_weight"
                   />
                 </div>
               </div>

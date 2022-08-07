@@ -27,7 +27,7 @@ export default {
       });
     },
     addAsset: function () {
-      this.updateBasketParams.asset_baskets.push({ name: "", weight: "" });
+      this.updateBasketParams.asset_baskets.push({ name: "", initial_weight: "" });
     },
     searchAssets: function () {
       axios.get("/assets.json").then((response) => {
@@ -126,10 +126,10 @@ export default {
                 <div class="row row-12" v-for="asset_basket in basket.asset_baskets" v-bind:key="asset_basket.id">
                   <span class="col-md btn btn-primary m-1 asset-name">{{ asset_basket.asset.name }}</span>
                   <span v-if="!isEdit" class="col-md btn btn-primary m-1 asset-weight">
-                    {{ asset_basket.weight * 100 }} %
+                    {{ asset_basket.initial_weight * 100 }} %
                   </span>
                   <div class="col-md" v-if="isEdit">
-                    <input class="btn btn-primary m-1 asset-weight" v-model="asset_basket.weight" />
+                    <input class="btn btn-primary m-1 asset-weight" v-model="asset_basket.initial_weight" />
                   </div>
                 </div>
                 <span
