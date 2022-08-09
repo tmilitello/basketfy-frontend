@@ -10,13 +10,19 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "apexcharts": "^3.35.4",
     "axios": "^0.27.2",
     "bootstrap-autocomplete": "^2.3.7",
+    "chart.js": "^3.9.1",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
+    "vue-apexcharts": "^1.6.2",
     "vue-bootstrap-typeahead": "^0.2.6",
+    "vue-chartjs": "^4.1.1",
+    "vue-doughnut-chart": "^0.3.0",
     "vue-router": "^4.0.3",
-    "vue-typeahead-bootstrap": "^2.12.0"
+    "vue-typeahead-bootstrap": "^2.12.0",
+    "vue3-apexcharts": "^1.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

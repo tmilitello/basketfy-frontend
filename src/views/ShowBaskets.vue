@@ -1,7 +1,15 @@
 <script>
 import axios from "axios";
+// import { Bar } from "vue-chartjs";
+import BarChart from "./BarChart";
+// import DoughnutChart from "./DoughnutChart";
 
 export default {
+  name: "App",
+  components: {
+    BarChart,
+    // DoughnutChart,
+  },
   data: function () {
     return {
       message: "View Basket",
@@ -166,6 +174,30 @@ export default {
       <!--end container-->
     </section>
     <!--end section-->
+    <div class="container mt-100 mt-60">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <div class="section-title">
+            <h4 class="mb-0">Basket Metrics</h4>
+          </div>
+        </div>
+        <!--end col-->
+
+        <div class="col-md-4 text-end d-none d-md-block"></div>
+      </div>
+      <!--end row-->
+      <div>
+        <!-- <div>
+          <DoughnutChart />
+        </div> -->
+
+        <div>
+          <BarChart />
+        </div>
+      </div>
+
+      <!--end row-->
+    </div>
     <div class="container mt-100 mt-60">
       <div class="row align-items-center">
         <div class="col-md-8">
