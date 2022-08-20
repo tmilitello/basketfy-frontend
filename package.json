@@ -19,6 +19,7 @@
     "vue-apexcharts": "^1.6.2",
     "vue-bootstrap-typeahead": "^0.2.6",
     "vue-chartjs": "^4.1.1",
+    "vue-chartkick": "^1.1.0",
     "vue-doughnut-chart": "^0.3.0",
     "vue-router": "^4.0.3",
     "vue-typeahead-bootstrap": "^2.12.0",

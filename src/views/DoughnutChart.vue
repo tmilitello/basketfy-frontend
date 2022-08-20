@@ -1,28 +1,38 @@
-<script>
-import { Doughnut } from "vue-chartjs";
-
-export default {
-  extends: Doughnut,
-  data() {
-    return {
-      datas: {
-        // 凡例とツールチップに表示するラベル
-        labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-        // 表示するデータ
-        datasets: [
-          {
-            data: [10, 15, 6, 22, 11, 49, 32],
-            backgroundColor: ["#f87979", "#aa4c8f", "#38b48b", "#006e54", "#c1e4e9", "#89c3eb", "#c3d825"],
-          },
+<!-- <script>
+const myChart = new Chart(ctx, {
+  type: "bar",
+  data: {
+    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+          "rgba(255, 99, 132, 0.2)",
+          "rgba(54, 162, 235, 0.2)",
+          "rgba(255, 206, 86, 0.2)",
+          "rgba(75, 192, 192, 0.2)",
+          "rgba(153, 102, 255, 0.2)",
+          "rgba(255, 159, 64, 0.2)",
         ],
+        borderColor: [
+          "rgba(255, 99, 132, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(255, 206, 86, 1)",
+          "rgba(75, 192, 192, 1)",
+          "rgba(153, 102, 255, 1)",
+          "rgba(255, 159, 64, 1)",
+        ],
+        borderWidth: 1,
       },
-      options: {
-        responsive: true,
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
       },
-    };
+    },
   },
-  mounted() {
-    this.renderChart(this.datas, this.options);
-  },
-};
-</script>
+});
+</script> -->
