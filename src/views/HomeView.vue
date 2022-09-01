@@ -24,7 +24,7 @@ export default {
               to explore what is moving markets
             </h4>
 
-            <p class="text-white-50 para-desc">Trade innovative baskets using the America's only retail basket app</p>
+            <p class="text-white-50 para-desc">Trade innovative baskets on America's only retail basket app</p>
 
             <div class="mt-4 mb-1">
               <a href="baskets/create" class="btn btn-success">Create a Basket</a>
