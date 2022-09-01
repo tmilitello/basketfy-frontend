@@ -151,7 +151,7 @@ export default {
                 <div class="row row-12" v-for="asset_basket in basket.asset_baskets" v-bind:key="asset_basket.id">
                   <span class="col-md btn btn-primary m-1 asset-name">{{ asset_basket.asset.name }}</span>
                   <span v-if="!isEdit" class="col-md btn btn-primary m-1 asset-weight">
-                    {{ asset_basket.initial_weight * 100 }} %
+                    {{ asset_basket.initial_weight }} %
                   </span>
                   <div class="col-md" v-if="isEdit">
                     <input class="btn btn-primary m-1 asset-weight" v-model="asset_basket.initial_weight" />

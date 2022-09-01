@@ -6,10 +6,12 @@ export default {
     return {
       message: "View Baskets",
       baskets: [],
+      clickedBasket: [],
     };
   },
   created: function () {
     this.indexBaskets();
+    this.clickedBasket = this.baskets;
   },
   methods: {
     indexBaskets: function () {
@@ -19,7 +21,8 @@ export default {
       });
     },
     changeBaskets: function () {
-      this.$router.push("/baskets/" + 2);
+      this.$router.push("/baskets/" + this.$route.params.id);
+      console.log("this basket id is:");
     },
   },
 };
@@ -70,8 +73,9 @@ export default {
                   <th class="py-3">
                     <a href="#!" class="align-items-center">
                       <!-- <img src="images/coin/bitcoin.png" class="me-3" height="32" alt="" /> -->
-                      <p class="mb-0 d-inline text-dark fw-normal h6" v-on:click="changeBaskets()">
+                      <p class="mb-0 d-inline text-dark fw-normal h6" v-on:click="changeBaskets(basket.id)">
                         {{ basket.name }}
+                        {{ basket.id }}
                         <!-- <span class="text-muted">BTC</span> -->
                       </p>
                     </a>

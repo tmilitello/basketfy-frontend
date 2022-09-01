@@ -24,7 +24,9 @@ export default {
               to explore what is moving markets
             </h4>
 
-            <p class="text-white-50 para-desc">With Basketfy, discover what is moving your porfolio</p>
+            <p class="text-white-50 para-desc">
+              Create and trade innovative baskets using the world's only retail basket app
+            </p>
 
             <div class="mt-4 mb-1">
               <a href="baskets/create" class="btn btn-success">Create a Basket</a>
