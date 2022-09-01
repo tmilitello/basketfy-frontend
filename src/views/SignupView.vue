@@ -26,17 +26,6 @@ export default {
 
 <template>
   <body>
-    <!-- Loader -->
-    <!-- <div id="preloader">
-            <div id="status">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
-            </div>
-        </div> -->
-    <!-- Loader -->
-
     <section
       class="bg-home d-flex align-items-center position-relative signup-box"
       style="background: url('images/bg/user.jpg') center"
