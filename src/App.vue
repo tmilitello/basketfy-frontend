@@ -106,8 +106,8 @@
                 <a href="javascript:void(0)">Auth pages</a>
                 <span class="submenu-arrow"></span>
                 <ul class="submenu">
-                  <li><a href="login.html" class="sub-menu-item">Login</a></li>
-                  <li><a href="signup.html" class="sub-menu-item">Signup</a></li>
+                  <li><a href="/login" class="sub-menu-item">Login</a></li>
+                  <li><a href="/signup" class="sub-menu-item">Signup</a></li>
                   <li><a href="reset-password.html" class="sub-menu-item">Reset Password</a></li>
                 </ul>
               </li>
