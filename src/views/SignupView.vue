@@ -36,9 +36,9 @@ export default {
           <div class="col-12">
             <div class="form-signin p-4 bg-light rounded shadow-md">
               <div>
-                <a href="index.html">
+                <!-- <a href="index.html">
                   <img src="images/icon-gradient.png" class="avatar avatar-md-md mb-4 d-block mx-auto" alt="" />
-                </a>
+                </a> -->
                 <h5 class="mb-3">Register your account</h5>
 
                 <div class="form-floating mb-2">
